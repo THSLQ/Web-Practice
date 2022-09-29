@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动属性以及浮动清除</title>
+    <style>
+        .red {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            float: left;
+        }
+
+        .green {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            float: left;
+        }
+
+        .blue {
+            width: 150px;
+            height: 200px;
+            background-color: blue;
+            /* clear: left; */
+        }
+        /* 设置容器固定高度 */
+        .container {
+            /* height: 100px; */
+
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 这里div在内部div浮动之后，高度为0，宽度为0，会出现高度塌陷
+    解决方式
+    1. 设置固定高度
+    2. 在后面容器内设置clear:...属性
+    3. 在浮动元素最后添加一个盒子，不设置宽高，设置clear属性
+    4. 在浮动容器上设置overflow: hidden; 通过引发bfc，使得浮动元素计算高度-->
+    <div class="container">
+        <div class="red"></div>
+        <div class="green"></div>
+        <!-- <div style="clear: left;"></div> -->
+    </div>
+
+    <div class="blue"></div>
+</body>
+
+</html>

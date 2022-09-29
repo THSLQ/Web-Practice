@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器</title>
+    <style>
+        /* 1.群组选择器 */
+        /* div,p {
+            background-color: yellow;
+        } */
+        /* 2,。后代选择器 */
+        div p {
+            background-color: yellow;
+        }
+        /* 3.伪类选择器 */
+        * {
+            padding:0;
+            margin:0;
+        }
+        a:link {
+            color: red;
+        }
+        a:visited {
+            color: yellow;
+        }
+        a:hover {
+            color: pink;
+        }
+        a:active {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h2>群组选择器</h2>
+    <div>11111</div>
+    <p>2222222</p>
+    <h2>后代选择器</h2>
+    <div>1234
+        <p>123123</p>
+    </div>
+    <h2>伪类选择器</h2>
+    <ul>
+        <li><a href="">国际</a></li>
+        <li><a href="">国内</a></li>
+        <li><a href="">军事</a></li>
+        <li><a href="">其他</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Table表格</title>
+</head>
+<body>
+    <!-- 创建表格table -->
+    <table> 
+        <!-- tr行 -->
+        <tr>
+            <!-- td单元格 -->
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+<!-- table表格的属性
+    1.width 数值 | 百分比（相对于父元素的百分比）
+    2.height
+    3.border 边框
+    4.align
+    5.borderkColor
+    6.bgcolor
+    7.cellspacing 单元格之间的空隙
+-->
+<!-- tr的属性table row
+    1.height
+    2.bgcolor
+    3.align 文字水平对齐left center right
+    4.valign 垂直对齐top middle bottom-->
+<!-- td 单元格属性tabel data
+    1.width：影响一整列的宽度属性
+    2.height：影响一整行的高度属性
+    3.bgcolor
+    4.align
+    5.valign  -->
+    <table border="1" width="200px" height="40px" bgcolor="red" align="center"
+        borderColor="blue" cellspacing ="0px"  cellpadding = "0px">
+        <tr bgcolor="#ccc000" align="center" valign="top">
+            <td width="100px" height="80px">1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+    <br />
+    <table width="200px" height="40px" align="center" border="1px" 
+        borderColor="red" cellSpacing="0px">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">3</td>
+            <!-- <td>4</td> -->
+        </tr>
+        <tr>
+            <td rowspan="2">1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <!-- <td>3</td> -->
+            <td>4</td>
+        </tr>
+    </table>
+    <h2>练习实例</h2>
+    <table border="1px" borderColor="#cc00cc" 
+        cellspacing ="0px" cellpadding ="0px">
+        <tr>
+            <td width="100px">会员姓名</td>
+            <td width="150px"></td>
+            <td width="100px">出生日期</td>
+            <td width="150px"></td>
+        </tr>
+        <tr>
+            <td>身份证号</td>
+            <td colspan="3"></td>
+
+        </tr>
+        <tr>
+            <td>通讯地址</td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td>联系电话</td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td>会员卡号</td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-css</title>
+    <!-- link标签引入外部css文件 -->
+    <!-- <link rel="stylesheet" type="text/css" href="../../CSS/01-css.css"> -->
+
+    <!-- import  引入css -->
+    <style>
+        @import url("../../CSS/01-css.css");
+    </style>
+
+    <!-- 
+        link 和 @import 之间的区别
+        1. 本质差别: link 属于XHTML 标签，@import完全是CSS提供的一种方式。
+        2. 加载顺序的差别:当一个页面被加载的时候（被浏览器浏览的时候），link引用的CSS会同时被加载，
+            而@import引入的CSS会等到页面全部被下载完之后在加载。
+            所以有时候浏览器@import记载CSS页面是开始会没有样式（就是闪烁），网速慢的时候很明显。
+        3. 兼容性差别：@import是CSS2.1提出的，所以老版的浏览器不支持。
+            @import只有在IE5以上的浏览器才能是被，而link标签无此问题。
+             -->
+</head>
+<body>
+    <h1>1111</h1>
+    <!-- 行内样式，内联样式，嵌入式样式使用style属性 -->
+    <div style="width: 100px; height: 100px; background-color: rosybrown;" ></div>
+
+    <!-- 样式优先级
+        1. !important
+        2. 内联样式
+        2.5 包含选择器 div p
+        3. #id
+        4. .class | 伪类 | 属性 | 
+        5. 标签选择器 | 伪元素
+    -->
+
+
+</body>
+</html>
